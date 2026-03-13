@@ -1,3 +1,6 @@
+<?php
+echo "<h1>Oi</h1>";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
