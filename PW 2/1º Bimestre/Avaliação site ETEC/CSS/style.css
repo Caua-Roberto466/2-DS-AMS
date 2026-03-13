@@ -1,0 +1,52 @@
+/*Variáveis do CSS*/
+:root{
+    /*Cores*/
+    --c_principal: #fe1010;
+    --c_secundaria: #555555;
+    --c_auxiliar: #777;
+    
+    /*Auxiliares*/
+    --box-shadow: 7px 7px 7px rgba(1, 1, 1, 0.4);
+    --titulo: monospace;
+    --fonte-principal: Arial;
+}
+/*
+==================================================================================================
+Estilo Geral
+==================================================================================================
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.lista-links{
+    display: flex;
+    gap: 2%;
+}
+
+/*
+==================================================================================================
+Header
+==================================================================================================
+*/
+header{
+    border-bottom: 1px solid var(--c_auxiliar);
+}
+.logo-header{
+    width: 15%;
+}
+.links-empresa{
+    list-style-type: none;
+    gap: 1%;
+}
+.link-empresa{
+    color: var(--c_principal);
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 109%;
+    margin-left: -29%;
+    margin-top: -2%;
+}
