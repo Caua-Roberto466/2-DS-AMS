@@ -31,12 +31,69 @@ body{
 Header
 ==================================================================================================
 */
+/*Empresa*/
 header{
-    border-bottom: 1px solid var(--c_auxiliar);
+    margin-bottom: 1%;
 }
 .logo-header{
-    width: 15%;
+    width: 200px;
 }
+.container-header{
+    border-bottom: 1px solid var(--c_auxiliar);
+    display: flex;
+    justify-content: space-around;
+}
+/*redes sociais*/
+.redes-sociais-header{
+    margin-block: auto;
+    display: flex;
+    gap: 2%;
+}
+.icones-header{
+    font-size: 190%;
+    color: var(--c_principal);
+    transition: 0.5s ease-in-out;
+}
+.icones-header:hover{
+    transform: scale(1.3);
+    color: #a90b0b;
+    cursor: pointer;
+}
+
+/*Barra de pesquisa*/
+.pesquisa{
+    margin-block: auto;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+#enviar{
+    border: 1px solid var(--c_auxiliar);
+    border-right: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: transparent;
+    font-size: 158%;
+    font-weight: bold;
+    height: 40px;
+    color: var(--c_principal);
+    transition: 0.4s ease-in-out;
+    padding-inline: 10px;
+}
+#enviar:hover{
+    background-color: var(--c_principal);
+    color: white;
+    cursor: pointer;
+}
+#barra-pesquisa{
+    width: 120%;
+    height: 40px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: solid 1px var(--c_auxiliar);
+}
+
+/*Nav bar*/
 .links-empresa{
     list-style-type: none;
     gap: 1%;
