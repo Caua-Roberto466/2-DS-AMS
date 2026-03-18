@@ -27,10 +27,37 @@
             <nav>
                 <ul class="lista-links links-empresa">
                     <li class="link-ul">
+                        <a href="#" class="link-empresa">Home</a>
+                    </li>
+                    <li class="link-ul">
                         <a href="#" class="link-empresa">Sobre Nós</a>
                     </li>
                     <li class="link-ul">
-                        <a href="#" class="link-empresa">Contato</a>
+                        <a href="contato.php" class="link-empresa">Contato</a>
+                    </li>
+                    <li class="link-ul">
+                        <a href="#" class="link-empresa">Eventos</a>
+                    </li>
+                    <li class="link-ul">
+                        <a href="#" class="link-empresa">Feiras</a>
+                    </li>
+                    <li class="link-ul">
+                        <a href="cursos.php" class="link-empresa">Cursos</a>
+                    </li>
+                    <li class="link-ul">
+                        <a href="gestao.php" class="link-empresa">Gestão</a>
+                    </li>
+                    <li class="link-ul">
+                        <a href="#" class="link-empresa">Locais</a>
+                    </li>
+                    <li class="link-ul">
+                        <a href="#" class="link-empresa">AMS: DS & RH</a>
+                    </li>
+                    <li class="link-ul">
+                        <a href="#" class="link-empresa">Graduação</a>
+                    </li>                    
+                    <li class="link-ul">
+                        <a href="https://www.cps.sp.gov.br/" target="_blank" class="link-empresa">Centro Paula Souza</a>
                     </li>
                 </ul>
             </nav>
