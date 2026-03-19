@@ -12,24 +12,35 @@
 .conquistas{
     margin-top: 7%;
     background-color: #fe101030;
+    padding-block: 20px;
 }
 .conquistas h2{
     text-align: center;
-    color: #555555;
+    color: #3d3d3d;
     font-family: var(--titulo);
-    padding-block: 25px;
+    font-size: 230%;
 }
 .popularidade{
-    margin-top: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 .container-popularidade{
     display: flex;
     justify-content: space-around;
 }
 .container-popularidade img{
-    width: 25%;
+    width: 100%;
+    border-radius: 10px;
 }
 .container-popularidade p{
     max-width: 60%;
+    font-family: var(--fonte-principal);
+    font-size: 120%;
 
+}
+.img{
+    width: 30%;
+    padding: 10px;
+    background-color: var(--c_principal);
+    border-radius: 10px;
 }

@@ -70,7 +70,9 @@
         <h2><?php echo"Veja nossas conquistas"; ?></h2>
         <article class="popularidade">
             <div class="container-popularidade">
-                <img src="../IMG/popularidade-Maker.png" alt="Alunos na sala da aula maker">
+                <article class="img">
+                    <img src="../IMG/popularidade-Maker.png" alt="Alunos na sala da aula maker">
+                </article>
                 <p><?php echo "Nossas escolas abrigam centenas de alunos por todo estado. Nossos cursos formam ótios profissionais anualmente, todos atendem os requesitos do mercado. 
                 <br>
                 
