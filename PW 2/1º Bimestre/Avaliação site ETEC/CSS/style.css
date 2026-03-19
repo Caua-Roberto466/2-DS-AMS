@@ -25,6 +25,12 @@ body{
     display: flex;
     gap: 2%;
 }
+h1{
+    font-family: var(--titulo);
+    text-align: center;
+    margin-top: 5%;
+    color: rgb(73, 73, 73);
+}
 
 /*
 ==================================================================================================
@@ -125,4 +131,18 @@ nav{
 }
 .link-ul:last-child {
     border-right: none; 
+}
+
+/*
+==================================================================================================
+Footer
+==================================================================================================
+*/
+footer{
+    background-color: var(--c_principal);
+    color: white;
+    font-family: var(--fonte-principal);
+    padding: 3%;
+    text-align: center;
+    margin-top: 10%;
 }

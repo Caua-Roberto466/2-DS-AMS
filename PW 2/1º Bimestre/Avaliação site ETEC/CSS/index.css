@@ -1,0 +1,35 @@
+:root{
+    /*Cores*/
+    --c_principal: #fe1010;
+    --c_secundaria: #555555;
+    --c_auxiliar: #777;
+    
+    /*Auxiliares*/
+    --box-shadow: 7px 7px 7px rgba(1, 1, 1, 0.4);
+    --titulo: monospace;
+    --fonte-principal: Arial;
+}
+.conquistas{
+    margin-top: 7%;
+    background-color: #fe101030;
+}
+.conquistas h2{
+    text-align: center;
+    color: #555555;
+    font-family: var(--titulo);
+    padding-block: 25px;
+}
+.popularidade{
+    margin-top: 2%;
+}
+.container-popularidade{
+    display: flex;
+    justify-content: space-around;
+}
+.container-popularidade img{
+    width: 25%;
+}
+.container-popularidade p{
+    max-width: 60%;
+
+}

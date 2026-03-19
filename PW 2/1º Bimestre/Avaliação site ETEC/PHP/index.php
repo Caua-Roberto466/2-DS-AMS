@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/index.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />   
     <title>ETEC | Centro Paula Souza</title>
 </head>
@@ -27,44 +28,59 @@
             <nav>
                 <ul class="lista-links links-empresa">
                     <li class="link-ul">
-                        <a href="#" class="link-empresa">Home</a>
+                        <a href="#" class="link-empresa"><?php echo "Home";?></a>
                     </li>
                     <li class="link-ul">
-                        <a href="#" class="link-empresa">Sobre Nós</a>
+                        <a href="#" class="link-empresa"><?php echo "Sobre nós";?></a>
                     </li>
                     <li class="link-ul">
-                        <a href="contato.php" class="link-empresa">Contato</a>
+                        <a href="contato.php" class="link-empresa"><?php echo "Contato";?></a>
                     </li>
                     <li class="link-ul">
-                        <a href="#" class="link-empresa">Eventos</a>
+                        <a href="#" class="link-empresa"><?php echo "Eventos";?></a>
                     </li>
                     <li class="link-ul">
-                        <a href="#" class="link-empresa">Feiras</a>
+                        <a href="#" class="link-empresa"><?php echo "Feiras";?></a>
                     </li>
                     <li class="link-ul">
-                        <a href="cursos.php" class="link-empresa">Cursos</a>
+                        <a href="cursos.php" class="link-empresa"><?php echo "Cursos";?></a>
                     </li>
                     <li class="link-ul">
-                        <a href="gestao.php" class="link-empresa">Gestão</a>
+                        <a href="gestao.php" class="link-empresa"><?php echo "Gestão";?></a>
                     </li>
                     <li class="link-ul">
-                        <a href="#" class="link-empresa">Locais</a>
+                        <a href="#" class="link-empresa"><?php echo "Locais";?></a>
                     </li>
                     <li class="link-ul">
-                        <a href="#" class="link-empresa">AMS: DS & RH</a>
+                        <a href="#" class="link-empresa"><?php echo "Cursos AMS";?></a>
                     </li>
                     <li class="link-ul">
-                        <a href="#" class="link-empresa">Graduação</a>
+                        <a href="#" class="link-empresa"><?php echo "Graduação";?></a>
                     </li>                    
                     <li class="link-ul">
-                        <a href="https://www.cps.sp.gov.br/" target="_blank" class="link-empresa">Centro Paula Souza</a>
+                        <a href="https://www.cps.sp.gov.br/" target="_blank" class="link-empresa"><?php echo "Centro Paula Souza";?></a>
                     </li>
                 </ul>
             </nav>
     </header>
     
+    <h1><?php echo"Venha aprender com as melhores escolas do Estado";?></h1>
+
+    <section class="conquistas">
+        <h2><?php echo"Veja nossas conquistas"; ?></h2>
+        <article class="popularidade">
+            <div class="container-popularidade">
+                <img src="../IMG/popularidade-Maker.png" alt="Alunos na sala da aula maker">
+                <p><?php echo "Nossas escolas abrigam centenas de alunos por todo estado. Nossos cursos formam ótios profissionais anualmente, todos atendem os requesitos do mercado. 
+                <br>
+                
+                "; ?></p>
+            </div>
+        </article>
+    </section>
+
     <footer>
-        
+        <h2>&copy;<?php echo "ETEC Zona Leste";?></h2>
     </footer>
 </body>
 </html>
