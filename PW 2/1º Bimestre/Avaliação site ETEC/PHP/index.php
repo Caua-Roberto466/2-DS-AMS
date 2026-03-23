@@ -73,9 +73,13 @@
                 <article class="img">
                     <img src="../IMG/popularidade-Maker.png" alt="Alunos na sala da aula maker">
                 </article>
-                <p><?php echo "Nossas escolas abrigam centenas de alunos por todo estado. Nossos cursos formam ótios profissionais anualmente, todos atendem os requesitos do mercado. 
+                <p><?php echo "Nossas escolas abrigam centenas de alunos distribuídos por todo o estado, oferecendo uma infraestrutura adequada e um ambiente propício para o aprendizado e o desenvolvimento pessoal.
                 <br>
-                
+                As ETECs são reconhecidas pela qualidade do ensino técnico e pelo compromisso com a formação completa dos estudantes, unindo teoria e prática de forma eficiente.
+                <br>
+                Nossos cursos formam ótimos profissionais anualmente, preparados para enfrentar os desafios do mercado de trabalho e se destacar em suas áreas de atuação.
+                <br>
+                Além disso, todos os cursos são constantemente atualizados para atender às exigências do mercado, acompanhando as inovações tecnológicas e as demandas das empresas.
                 "; ?></p>
             </div>
         </article>

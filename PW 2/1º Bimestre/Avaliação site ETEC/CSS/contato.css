@@ -1,0 +1,55 @@
+:root{
+    /*Cores*/
+    --c_principal: #fe1010;
+    --c_secundaria: #555555;
+    --c_auxiliar: #777;
+    
+    /*Auxiliares*/
+    --box-shadow: 7px 7px 7px rgba(1, 1, 1, 0.4);
+    --titulo: monospace;
+    --fonte-principal: Arial;
+}
+form{
+    margin-top: 4%;
+    width: 50%;
+    border: 2px solid var(--c_principal);
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+label{
+    color: #303030;
+    font-size: 140%;
+    font-family: var(--fonte-principal);
+    display: block;
+}
+.input, textarea{
+    width: 50%;
+    height: 30px;
+    border-radius: 9px;
+    border: solid 2px var(--c_principal);
+    display: block;
+    margin: auto;
+    margin-bottom: 3%;
+}
+textarea{
+    height: 30vh;
+    resize: none;
+    font-size: 120%;
+}
+form button{
+    width: 22%;
+    color: white;
+    background-color: var(--c_principal);
+    font-size: 140%;
+    border: none;
+    border-radius: 8px;
+    transition: 0.4s ease-in-out;
+    /* height: 30px; */
+}
+form button:hover{
+    transform: scale(1.05);
+    background-color: #b50707;
+    box-shadow: 0 0 10px 4px #b50707a0;
+}
