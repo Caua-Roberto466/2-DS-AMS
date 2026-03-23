@@ -66,6 +66,12 @@
 
     <h1><?php echo"Conheça a gestão de nossas escolas"; ?></h1>
 
+    <section class="direcao">
+        <div class="container-deirecao">
+    
+        </div>
+    </section>
+
     <footer>
         <h2>&copy;<?php echo "ETEC Zona Leste";?></h2>
     </footer>
