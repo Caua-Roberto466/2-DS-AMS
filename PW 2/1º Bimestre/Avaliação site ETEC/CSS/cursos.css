@@ -1,0 +1,12 @@
+:root{
+    /*Cores*/
+    --c_principal: #fe1010;
+    --c_secundaria: #555555;
+    --c_auxiliar: #777;
+    
+    /*Auxiliares*/
+    --box-shadow: 7px 7px 7px rgba(1, 1, 1, 0.4);
+    --titulo: monospace;
+    --fonte-principal: Arial;
+}
+
