@@ -66,6 +66,8 @@
 
     <h1><?php echo"Venha conhecer nosso curso"; ?></h1>
 
+    
+
     <footer>
         <h2>&copy;<?php echo "ETEC Zona Leste";?></h2>
     </footer>
