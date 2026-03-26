@@ -10,3 +10,25 @@
     --fonte-principal: Arial;
 }
 
+.tec{
+    margin-top: 4%;
+    justify-content: center;
+}
+.container-cursos{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+.curso{
+    width: 28%;
+}
+.curso img{
+    border: 1px solid var(--c_principal);
+    width: 80%;
+    border-radius: 15px;
+}
+.curso p{
+    max-width: 78%;
+    font-family: var(--fonte-principal);
+    text-align: center;
+}

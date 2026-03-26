@@ -66,7 +66,28 @@
 
     <h1><?php echo"Venha conhecer nosso curso"; ?></h1>
 
-    
+    <section class="tec">
+        <div class="container-cursos">
+            <article class="curso ds">
+                <img src="../IMG/ds.png" alt="Homem programando">
+                <p>
+                    <?php echo"<strong>Desenvolvimento de sistema:</strong> Um curso que ensina jovens alunos a prgramar seguido de excelentes professores"; ?>
+                </p>
+            </article>
+            <article class="curso ds">
+                <img src="../IMG/eletronica.png" alt="Componetes eletronicos">
+                <p>
+                    <?php echo"<strong>Eletrônica:</strong> Um curso que ensina como usar componentes para construir relógios, robôs, projetos de cidades entre outros"; ?>
+                </p>
+            </article>
+            <article class="curso ds">
+                <img src="../IMG/Seguranca-digital.png" alt="Homem programando">
+                <p>
+                    <?php echo"<strong>Eletrônica:</strong> Um curso que ensina como usar componentes para construir relógios, robôs, projetos de cidades entre outros"; ?>
+                </p>
+            </article>
+        </div>
+    </section>
 
     <footer>
         <h2>&copy;<?php echo "ETEC Zona Leste";?></h2>
