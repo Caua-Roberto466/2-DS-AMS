@@ -1,0 +1,241 @@
+/* Corpo do card */
+.card-body {
+    padding: 0 22px 26px;
+    text-align: center;
+    flex: 1;
+}
+.card-nome {
+    font-family: Arial, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #222;
+    margin: 0 0 6px;
+}
+.card-cargo {
+    font-family: Arial, sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #fe1010;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 12px;
+}
+.card-descricao {
+    font-family: Arial, sans-serif;
+    font-size: 0.88rem;
+    color: #666;
+    line-height: 1.55;
+    margin: 0 0 18px;
+}
+
+/* Contato do card */
+.card-contato {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.card-contato a {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1.5px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+.card-contato a:hover {
+    background: #fe1010;
+    border-color: #fe1010;
+    color: white;
+}
+
+/* ---- Seção Organograma ---- */
+.organograma {
+    padding: 0 6% 60px;
+}
+
+.org-wrapper {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 40px 30px;
+    overflow-x: auto;
+}
+
+.org-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Nó do organograma */
+.org-node {
+    text-align: center;
+    position: relative;
+}
+.org-box {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    min-width: 160px;
+    position: relative;
+}
+.org-box.nivel-1 {
+    background: #fe1010;
+    color: white;
+    font-size: 0.95rem;
+}
+.org-box.nivel-2 {
+    background: #222;
+    color: white;
+}
+.org-box.nivel-3 {
+    background: #f5f5f5;
+    color: #333;
+    border: 1.5px solid #ddd;
+    font-weight: 500;
+}
+.org-sub {
+    font-size: 0.72rem;
+    opacity: 0.75;
+    font-weight: 400;
+    display: block;
+    margin-top: 2px;
+}
+
+/* Linhas de conexão */
+.org-linha-v {
+    width: 2px;
+    height: 30px;
+    background: #ddd;
+    margin: 0 auto;
+}
+.org-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+.org-row::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(50% - (100% - 160px)/2);
+    right: calc(50% - (100% - 160px)/2);
+    height: 2px;
+    background: #ddd;
+}
+.org-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---- Seção Missão, Visão, Valores ---- */
+.mvv-section {
+    background: #f9f9f9;
+    padding: 60px 6%;
+}
+.mvv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-top: 36px;
+}
+.mvv-card {
+    background: white;
+    border-radius: 12px;
+    padding: 32px 26px;
+    box-shadow: 0 2px 14px rgba(0,0,0,0.07);
+    border-top: 5px solid #fe1010;
+    transition: transform 0.3s;
+}
+.mvv-card:hover {
+    transform: translateY(-4px);
+}
+.mvv-icon {
+    font-size: 2.2rem;
+    color: #fe1010;
+    margin-bottom: 14px;
+}
+.mvv-titulo {
+    font-family: monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #222;
+    margin: 0 0 10px;
+}
+.mvv-texto {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ---- Seção Contato da Gestão ---- */
+.contato-gestao {
+    padding: 60px 6%;
+}
+.contato-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 36px;
+}
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    border-left: 4px solid #fe1010;
+    transition: box-shadow 0.3s;
+}
+.contato-item:hover {
+    box-shadow: 0 6px 20px rgba(254,16,16,0.12);
+}
+.contato-item i {
+    font-size: 1.7rem;
+    color: #fe1010;
+    flex-shrink: 0;
+}
+.contato-info strong {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-bottom: 3px;
+}
+.contato-info span {
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container-direcao {
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+        gap: 18px;
+    }
+    .org-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .org-row::before { display: none; }
+}
