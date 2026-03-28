@@ -74,16 +74,36 @@
                     <?php echo"<strong>Desenvolvimento de sistema:</strong> Um curso que ensina jovens alunos a prgramar seguido de excelentes professores"; ?>
                 </p>
             </article>
-            <article class="curso ds">
+            <article class="curso eletronica">
                 <img src="../IMG/eletronica.png" alt="Componetes eletronicos">
                 <p>
                     <?php echo"<strong>Eletrônica:</strong> Um curso que ensina como usar componentes para construir relógios, robôs, projetos de cidades entre outros"; ?>
                 </p>
             </article>
-            <article class="curso ds">
+            <article class="curso seguranca-digital">
                 <img src="../IMG/Seguranca-digital.png" alt="Homem programando">
                 <p>
                     <?php echo"<strong>Eletrônica:</strong> Um curso que ensina como usar componentes para construir relógios, robôs, projetos de cidades entre outros"; ?>
+                </p>
+            </article>
+        </div>
+        <div class="container-cursos">
+            <article class="curso">
+                <img src="../IMG/banco-de-dados.jpg" alt="Imagem de um data center">
+                <p>
+                    <?php echo"<strong>Adiministrador de banco de dados:</strong> Um curso que ensina estudantes a adimnistrar banco de dados que gerenciam centenas de clientes"; ?>
+                </p>
+            </article>
+            <article class="curso">
+                <img src="../IMG/redes_de_computadores.png" alt="Imagem de um sistema de rede">
+                <p>
+                    <?php echo"<strong>Redes de Computadores:</strong> Um curso para aprender a criar redes cabeadas e Wi-Fi sem precisar da Claro ou da Vivo"; ?>
+                </p>
+            </article>
+            <article class="curso">
+                <img src="../IMG/energia-renovavel.png" alt="Imagem de um centro de energia eólica">
+                <p>
+                    <?php echo"<strong>Sistema de energia renovável:</strong> Venha aprender novas formas de se produzir uma energia limp, que não polua o planeta, nem que sofra de escassez"; ?>
                 </p>
             </article>
         </div>
