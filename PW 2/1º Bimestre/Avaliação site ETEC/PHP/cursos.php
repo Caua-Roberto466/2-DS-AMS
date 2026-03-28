@@ -148,5 +148,6 @@
     <footer>
         <h2>&copy;<?php echo "ETEC Zona Leste";?></h2>
     </footer>
+    <script src="../JavaScript/barra-pesquisa.js"></script>
 </body>
 </html>
