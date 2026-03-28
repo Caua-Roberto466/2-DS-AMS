@@ -119,8 +119,30 @@
         </p>
     </section>
 
-    <section class="mais-popular">
-        <h2><?php echo"Conheça nossos cursos mais populares"?></h2>
+    <section class="populares">
+        <h2><?php echo"Conhça nossos cursos mais populares"?> </h2>
+        <div class="container-populares">
+
+            <article class="card-popular">
+                <h3 class="card-titulo">Eletrônica</h3>
+                <img src="../IMG/eletronica.png" alt="Componentes eletrônicos">
+                <p><?php echo"Aprenda a construir relógios, robôs e projetos de cidades com componentes eletrônicos."?></p>
+            </article>
+
+            <article class="card-popular destaque">
+                <span class="etiqueta">⭐ Mais popular</span>
+                <h3 class="card-titulo">Desenvolvimento de Sistemas</h3>
+                <img src="../IMG/ds.png" alt="Homem programando">
+                <p><?php echo"Aprenda a programar com excelentes professores e entre no mercado de tecnologia."?></p>
+            </article>
+
+            <article class="card-popular">
+                <h3 class="card-titulo">Redes de Computadores</h3>
+                <img src="../IMG/redes_de_computadores.png" alt="Sistema de rede">
+                <p><?php echo"Crie redes cabeadas e Wi-Fi e entenda como a internet realmente funciona."?></p>
+            </article>
+
+        </div>
     </section>
 
     <footer>

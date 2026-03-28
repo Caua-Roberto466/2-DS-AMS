@@ -1,46 +1,290 @@
-:root{
-    /*Cores*/
-    --c_principal: #fe1010;
-    --c_secundaria: #555555;
-    --c_auxiliar: #777;
-    
-    /*Auxiliares*/
-    --box-shadow: 7px 7px 7px rgba(1, 1, 1, 0.4);
-    --titulo: monospace;
-    --fonte-principal: Arial;
+/* ========== HERO ========== */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
+    gap: 40px;
+    background: linear-gradient(135deg, #fff 60%, #fe101010 100%);
+    border-bottom: 1px solid #eee;
 }
-.conquistas{
+
+.hero-tag {
+    display: inline-block;
+    background: var(--c_principal);
+    color: #fff;
+    font-family: var(--fonte-principal);
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.hero-conteudo h1 {
+    font-family: var(--titulo);
+    font-size: 3rem;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.hero-conteudo p {
+    font-family: var(--fonte-principal);
+    font-size: 1.05rem;
+    color: var(--c_secundaria);
+    max-width: 460px;
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+
+.btn-hero {
+    display: inline-block;
+    background: var(--c_principal);
+    color: #fff;
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-hero:hover {
+    background: #cc0000;
+    transform: translateY(-2px);
+}
+
+.hero-destaque {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-left: 4px solid var(--c_principal);
+    padding: 18px 32px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    min-width: 180px;
+}
+
+.hero-numero {
+    font-family: var(--titulo);
+    font-size: 2rem;
+    color: var(--c_principal);
+    font-weight: bold;
+}
+
+.hero-label {
+    font-family: var(--fonte-principal);
+    font-size: 0.8rem;
+    color: var(--c_auxiliar);
+    margin-top: 4px;
+}
+
+/* ========== CONQUISTAS (já existia, mantida) ========== */
+.conquistas {
     margin-top: 7%;
     background-color: #fe101030;
     padding-block: 20px;
 }
-.conquistas h2{
+
+.conquistas h2 {
     text-align: center;
     color: #3d3d3d;
     font-family: var(--titulo);
     font-size: 230%;
 }
-.popularidade{
+
+.popularidade {
     margin-top: 1%;
     margin-bottom: 1%;
 }
-.container-popularidade{
+
+.container-popularidade {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding: 20px 5%;
 }
-.container-popularidade img{
+
+.container-popularidade img {
     width: 100%;
     border-radius: 10px;
 }
-.container-popularidade p{
-    max-width: 60%;
-    font-family: var(--fonte-principal);
-    font-size: 120%;
 
+.container-popularidade p {
+    max-width: 58%;
+    font-family: var(--fonte-principal);
+    font-size: 1.05rem;
+    color: var(--c_secundaria);
+    line-height: 1.8;
 }
-.img{
+
+.img {
     width: 30%;
     padding: 10px;
     background-color: var(--c_principal);
     border-radius: 10px;
+}
+
+/* ========== CURSOS EM DESTAQUE ========== */
+.destaques {
+    padding: 70px 5%;
+    background: #f9f9f9;
+}
+
+.destaques-titulo {
+    text-align: center;
+    font-family: var(--titulo);
+    font-size: 2rem;
+    color: #3d3d3d;
+    margin-bottom: 40px;
+}
+
+.container-destaques {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+.card-destaque {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 240px;
+    padding: 28px 20px;
+    background: #fff;
+    border-top: 4px solid var(--c_principal);
+    border-radius: 0 0 12px 12px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.25s ease;
+}
+
+.card-destaque:hover {
+    transform: translateY(-6px);
+}
+
+.card-icone {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.card-destaque h3 {
+    font-family: var(--titulo);
+    font-size: 0.95rem;
+    color: var(--c_principal);
+    margin-bottom: 10px;
+}
+
+.card-destaque p {
+    font-family: var(--fonte-principal);
+    font-size: 0.85rem;
+    color: var(--c_secundaria);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.card-link {
+    font-family: var(--fonte-principal);
+    font-size: 0.85rem;
+    color: var(--c_principal);
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+.card-destaque.popular {
+    width: 270px;
+    padding-top: 48px;
+    border-top-width: 6px;
+    transform: translateY(-16px);
+}
+
+.card-destaque.popular:hover {
+    transform: translateY(-22px);
+}
+
+.etiqueta {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--c_principal);
+    color: #fff;
+    font-family: var(--fonte-principal);
+    font-size: 0.72rem;
+    font-weight: bold;
+    padding: 4px 14px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+/* ========== CTA ========== */
+.cta {
+    text-align: center;
+    padding: 70px 20px;
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+
+.cta h2 {
+    font-family: var(--titulo);
+    font-size: 1.9rem;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+
+.cta p {
+    font-family: var(--fonte-principal);
+    color: var(--c_auxiliar);
+    font-size: 1rem;
+    margin-bottom: 28px;
+}
+
+.btn-cta {
+    display: inline-block;
+    background: var(--c_principal);
+    color: #fff;
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 14px 36px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-cta:hover {
+    background: #cc0000;
+    transform: translateY(-2px);
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background: #1a1a1a;
+    text-align: center;
+    padding: 24px;
+}
+
+footer h2 {
+    font-family: var(--fonte-principal);
+    font-size: 0.9rem;
+    color: #aaa;
+    font-weight: normal;
 }

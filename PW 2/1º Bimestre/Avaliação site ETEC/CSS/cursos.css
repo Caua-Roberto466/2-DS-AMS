@@ -50,12 +50,83 @@
     font-size: 130%;
 }
 
-.mais-popular{
-    margin-top: 5%;
-}
-.mais-popular h2{
-    font-size: 180%;
-    color: var(--c_auxiliar);
-    font-family: var(--titulo);
+.populares {
+    margin: 60px 0;
     text-align: center;
+}
+
+.container-populares {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 24px;
+    padding: 40px 20px;
+}
+
+.card-popular {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+    padding: 24px 16px;
+    border-top: 4px solid var(--c_principal);
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+}
+
+.card-popular:hover {
+    transform: translateY(-6px);
+}
+
+.card-popular img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 14px;
+}
+
+.card-popular .card-titulo {
+    font-family: var(--titulo);
+    font-size: 1rem;
+    color: var(--c_principal);
+    margin-bottom: 10px;
+}
+
+.card-popular p {
+    font-family: var(--fonte-principal);
+    font-size: 0.875rem;
+    color: var(--c_secundaria);
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* --- Card destaque (meio) --- */
+.card-popular.destaque {
+    width: 290px;         /* ligeiramente maior */
+    padding-top: 44px;    /* espaço para a etiqueta */
+    border-top-width: 6px;
+    transform: translateY(-16px); /* sobe um pouco */
+}
+
+.card-popular.destaque:hover {
+    transform: translateY(-22px);
+}
+
+/* --- Etiqueta "Mais popular" --- */
+.etiqueta {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--c_principal);
+    color: #fff;
+    font-family: var(--fonte-principal);
+    font-size: 0.78rem;
+    font-weight: bold;
+    padding: 4px 14px;
+    border-radius: 20px;
+    white-space: nowrap;
+    box-shadow: 0 3px 8px rgba(254, 16, 16, 0.4);
 }

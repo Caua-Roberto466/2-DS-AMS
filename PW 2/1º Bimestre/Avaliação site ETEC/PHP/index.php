@@ -66,23 +66,78 @@
     
     <h1><?php echo"Venha aprender com as melhores escolas do Estado";?></h1>
 
+    <section class="hero">
+        <div class="hero-conteudo">
+            <span class="hero-tag">ETEC Zona Leste</span>
+            <h1><?php echo "Aprenda hoje.<br>Lidere amanhã."; ?></h1>
+            <p><?php echo "Cursos técnicos gratuitos com qualidade reconhecida em todo o estado de São Paulo."; ?></p>
+            <a href="cursos.php" class="btn-hero"><?php echo "Conheça os cursos"; ?></a>
+        </div>
+        <div class="hero-destaque">
+            <div class="hero-card">
+                <span class="hero-numero">+300</span>
+                <span class="hero-label">alunos formados por ano</span>
+            </div>
+            <div class="hero-card">
+                <span class="hero-numero">10</span>
+                <span class="hero-label">cursos técnicos</span>
+            </div>
+            <div class="hero-card">
+                <span class="hero-numero">+20</span>
+                <span class="hero-label">anos de história</span>
+            </div>
+        </div>
+    </section>
+
     <section class="conquistas">
-        <h2><?php echo"Veja nossas conquistas"; ?></h2>
+        <h2><?php echo "Veja nossas conquistas"; ?></h2>
         <article class="popularidade">
             <div class="container-popularidade">
                 <article class="img">
-                    <img src="../IMG/popularidade-Maker.png" alt="Alunos na sala da aula maker">
+                    <img src="../IMG/popularidade-Maker.png" alt="Alunos na sala maker">
                 </article>
                 <p><?php echo "Nossas escolas abrigam centenas de alunos distribuídos por todo o estado, oferecendo uma infraestrutura adequada e um ambiente propício para o aprendizado e o desenvolvimento pessoal.
-                <br>
+                <br><br>
                 As ETECs são reconhecidas pela qualidade do ensino técnico e pelo compromisso com a formação completa dos estudantes, unindo teoria e prática de forma eficiente.
-                <br>
-                Nossos cursos formam ótimos profissionais anualmente, preparados para enfrentar os desafios do mercado de trabalho e se destacar em suas áreas de atuação.
-                <br>
-                Além disso, todos os cursos são constantemente atualizados para atender às exigências do mercado, acompanhando as inovações tecnológicas e as demandas das empresas.
-                "; ?></p>
+                <br><br>
+                Nossos cursos formam ótimos profissionais anualmente, preparados para enfrentar os desafios do mercado de trabalho e se destacar em suas áreas de atuação."; ?></p>
             </div>
         </article>
+    </section>
+
+    <section class="destaques">
+        <h2 class="destaques-titulo"><?php echo "Cursos em destaque"; ?></h2>
+        <div class="container-destaques">
+
+            <article class="card-destaque">
+                <div class="card-icone">🔌</div>
+                <h3><?php echo "Eletrônica"; ?></h3>
+                <p><?php echo "Construa robôs, relógios e projetos com componentes eletrônicos."; ?></p>
+                <a href="cursos.php" class="card-link"><?php echo "Saiba mais →"; ?></a>
+            </article>
+
+            <article class="card-destaque popular">
+                <span class="etiqueta"><?php echo "⭐ Mais popular"; ?></span>
+                <div class="card-icone">💻</div>
+                <h3><?php echo "Desenvolvimento de Sistemas"; ?></h3>
+                <p><?php echo "Aprenda a programar do zero com professores experientes e entre no mercado de TI."; ?></p>
+                <a href="cursos.php" class="card-link"><?php echo "Saiba mais →"; ?></a>
+            </article>
+
+            <article class="card-destaque">
+                <div class="card-icone">🌐</div>
+                <h3><?php echo "Redes de Computadores"; ?></h3>
+                <p><?php echo "Configure redes cabeadas e Wi-Fi e entenda como a internet funciona."; ?></p>
+                <a href="cursos.php" class="card-link"><?php echo "Saiba mais →"; ?></a>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2><?php echo "Pronto para começar sua carreira?"; ?></h2>
+        <p><?php echo "Inscrições abertas para o próximo semestre. Garanta sua vaga agora."; ?></p>
+        <a href="cursos.php" class="btn-cta"><?php echo "Ver todos os cursos"; ?></a>
     </section>
 
     <footer>
