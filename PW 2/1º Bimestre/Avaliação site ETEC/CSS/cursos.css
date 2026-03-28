@@ -49,3 +49,13 @@
     font-family: var(--fonte-principal);
     font-size: 130%;
 }
+
+.mais-popular{
+    margin-top: 5%;
+}
+.mais-popular h2{
+    font-size: 180%;
+    color: var(--c_auxiliar);
+    font-family: var(--titulo);
+    text-align: center;
+}

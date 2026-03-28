@@ -111,12 +111,16 @@
 
     <section class="mais-info">
         <p>
-            Os cursos da etec são pensados em como podemos garantir o melhor ensino para nossos alunos, alunos esses de todas as regiões do estado.
+            <?php echo"Os cursos da etec são pensados em como podemos garantir o melhor ensino para nossos alunos, alunos esses de todas as regiões do estado.
             <br>
             Para se matricular em um curso basta se inscrever para o vestibulinho, uma prova com 40 questões que ira classificar se vocês está apto ou não para entrar na etec.
             <br>
-            Após fazer a prova e ter passado, você irá se dirigir até a unidade escolhida e iniciará seus estudos.
+            Após fazer a prova e ter passado, você irá se dirigir até a unidade escolhida e iniciará seus estudos."; ?>
         </p>
+    </section>
+
+    <section class="mais-popular">
+        <h2><?php echo"Conheça nossos cursos mais populares"?></h2>
     </section>
 
     <footer>
