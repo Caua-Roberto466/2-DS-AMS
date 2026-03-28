@@ -17,11 +17,14 @@
 .container-cursos{
     display: flex;
     justify-content: center;
-    gap: 2%;
+    gap: 3%;
     margin-top: 6%;
 }
-.curso{
+.curso {
     width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza img e p horizontalmente */
 }
 .curso img{
     border: 1px solid var(--c_principal);
@@ -29,7 +32,20 @@
     border-radius: 15px;
 }
 .curso p{
-    max-width: 78%;
+    width: 80%;
     font-family: var(--fonte-principal);
     text-align: center;
+}
+
+.mais-info{
+    width: 100%;
+    background-color: var(--c_principal);
+    margin-top: 5%;
+    padding: 10px;
+    padding-block: 20px;
+}
+.mais-info p{
+    color: white;
+    font-family: var(--fonte-principal);
+    font-size: 130%;
 }
