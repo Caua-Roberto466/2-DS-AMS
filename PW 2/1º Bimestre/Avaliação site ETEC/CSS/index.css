@@ -275,16 +275,3 @@
     transform: translateY(-2px);
 }
 
-/* ========== FOOTER ========== */
-footer {
-    background: #1a1a1a;
-    text-align: center;
-    padding: 24px;
-}
-
-footer h2 {
-    font-family: var(--fonte-principal);
-    font-size: 0.9rem;
-    color: #aaa;
-    font-weight: normal;
-}
