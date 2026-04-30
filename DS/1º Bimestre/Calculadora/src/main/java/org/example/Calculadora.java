@@ -8,11 +8,19 @@ public class Calculadora extends JFrame {
     JLabel rotulo1, rotulo2, exibir;
     JTextField numero1, numero2;
     JButton somar, sub, multi, div, raiz;
+    ImageIcon isoma, isub, imulti, idiv, iraiz;
 
     public Calculadora(){
         super("Calculadora");
         Container tela = getContentPane();
         setLayout(null);
+
+        //Imagens
+        isoma = new ImageIcon("soma.png");
+        isub = new ImageIcon("subtracao.png");
+        imulti = new ImageIcon("multi.png");
+        idiv = new ImageIcon("divi.png");
+        iraiz = new ImageIcon("raiz.png");
 
         //Rotulos
         rotulo1 = new JLabel("1º Número");
@@ -21,8 +29,9 @@ public class Calculadora extends JFrame {
 
         rotulo1.setBounds(50, 20, 80, 20);
         rotulo2.setBounds(50, 60, 80, 20);
-        exibir.setBounds(100, 200, 100, 20);
+        exibir.setBounds(50, 200, 300, 20);
 
+        exibir.setFont(exibir.getFont().deriveFont(24f));
 
         //Campos de textos
         numero1 = new JTextField(6);
@@ -32,17 +41,23 @@ public class Calculadora extends JFrame {
         numero2.setBounds(50, 80, 300, 20);
 
         //Botoões
-        somar = new JButton("Somar");
-        sub = new JButton("Subtrair");
-        multi = new JButton("Multiplicar");
-        div = new JButton("Dividir");
-        raiz = new JButton("Raiz Quadrada");
+        somar = new JButton(isoma);
+        sub = new JButton(isub);
+        multi = new JButton(imulti);
+        div = new JButton(idiv);
+        raiz = new JButton(iraiz);
 
-        somar.setBounds(30, 120, 70, 20);
-        sub.setBounds(120, 120, 100, 20);
-        multi.setBounds(270, 120, 100, 20);
-        div.setBounds(390, 120, 100, 20);
-        raiz.setBounds(300, 150, 70, 20);
+        somar.setBounds(59, 120, 40, 40);
+        sub.setBounds(119, 120, 40, 40);
+        multi.setBounds(179, 120, 40, 40);
+        div.setBounds(239, 120, 40, 40);
+        raiz.setBounds(299, 120, 40, 40);
+
+        somar.setBackground(new Color(46, 165, 220));
+        sub.setBackground(new Color(46, 165, 220));
+        multi.setBackground(new Color(46, 220, 220));
+        div.setBackground(new Color(46, 220, 220));
+        raiz.setBackground(new Color(46, 220, 148));
 
         somar.addActionListener(
                 new ActionListener() {
@@ -96,7 +111,7 @@ public class Calculadora extends JFrame {
                         int num2 = Integer.parseInt(numero2.getText());
                         soma = num1 + num2;
                         double raiz = Math.sqrt(soma);
-                        exibir.setText("A soma é: "+raiz);
+                        exibir.setText("A raiz quadrada é: "+raiz);
                     }
                 }
         );
@@ -115,7 +130,7 @@ public class Calculadora extends JFrame {
         tela.add(div);
         tela.add(raiz);
 
-        setSize(600, 370);
+        setSize(400, 280);
         setVisible(true);
         setLocationRelativeTo(null);
     }
