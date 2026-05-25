@@ -1,0 +1,47 @@
+form{
+    width: 50%;
+    margin: auto;
+    margin-top: 20%;
+    border: 2px solid #2060ff;
+    padding: 10px;
+    border-radius: 15px;
+}
+label{
+    display: block;
+    font-size: 120%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: sans-serif;
+}
+.inp{
+    display: block;
+    width: 60%;
+    height: 30px;
+    border-radius: 8px;
+    margin: auto;
+    margin-bottom: 20ox;
+    border: 2px solid #202020;
+}
+.btn{
+    font-size: 120%;
+    border: 1px solid #218767;
+    background-color: #0de09d;
+    color: white;
+    border-radius: 3px;
+    justify-content: center;
+}
+div{
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+h2{
+    border: 2px solid #f00;
+    border-radius: 15px;
+    width: 50%;
+    font-size: 220%;
+    margin: auto;
+    margin-top: 20%;
+    padding: 20px;
+}
