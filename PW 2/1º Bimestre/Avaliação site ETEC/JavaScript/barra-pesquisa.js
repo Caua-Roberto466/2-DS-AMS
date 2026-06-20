@@ -1,3 +1,4 @@
+//Barra de pesquisa
 const btn = document.getElementById('enviar');
 const input = document.getElementById('barra-pesquisa');
 
