@@ -66,7 +66,7 @@
 
     <h1><?php echo"Nos contate para atendermos suas dúvidas"; ?></h1>
 
-    <form action="processa.php" method="post">
+    <form action="processa.php" method="post" id="form-contato">
         <label for="nome"><?php echo"Insira seu nome"; ?></label>
         <input type="text" name="nome" id="nome" class="input" required placeholder="Digite seu nome">
 
@@ -82,6 +82,38 @@
     <footer>
         <h2>&copy;<?php echo "ETEC Zona Leste";?></h2>
     </footer>
+    <script>
+        document.getElementById('form-contato').addEventListener('submit', function(event) {
+            // Captura os campos
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const mensagem = document.getElementById('mensagem').value.trim();
+            
+            // Expressão regular simples para validar o formato do email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
+            // Validação do Nome
+            if (nome.length < 3) {
+                alert('Por favor, insira um nome válido (mínimo 3 caracteres).');
+                event.preventDefault(); // Impede o envio do formulário
+                return;
+            }
+        
+            // Validação do Email
+            if (!emailRegex.test(email)) {
+                alert('Por favor, insira um endereço de e-mail válido.');
+                event.preventDefault(); 
+                return;
+            }
+        
+            // Validação da Mensagem
+            if (mensagem.length < 10) {
+                alert('Sua mensagem está muito curta. Escreva pelo menos 10 caracteres.');
+                event.preventDefault();
+                return;
+            }
+        });
+    </script>
     <script src="../JavaScript/barra-pesquisa.js"></script>
 </body>
 </html>
